@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<!--
+    index.html ~ index.jsp
+    : 메인 페이지 
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메인 페이지</title>
+<style type="text/css">
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        gap: 20px; 
+    }
+    input[type="submit"] {
+        padding: 20px 40px; 
+        font-size: 18px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #fff;
+        color: #45a049;
+        border: 1px solid #45a049;
+    }
+</style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="" method="post">
+            <input type="submit" value="로그인">
+            <input type="hidden" name="cmd" value="m_login">
+        </form>
+        <form action="" method="post">
+            <input type="submit" value="회원가입">
+            <input type="hidden" name="cmd" value="m_join">
+        </form>
+    </div>
+</body>
+</html>
